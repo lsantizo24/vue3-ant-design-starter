@@ -1,28 +1,26 @@
 module.exports = {
-  root: true,
-  env: {
-    browser: true,
+  "root": true,
+  "env": {
+      "node": true
   },
-  parserOptions: {
-    parser: 'babel-eslint',
-    sourceType: 'module',
-  },
-  extends: [
-    'airbnb-base',
-    'plugin:vue/vue3-essential',
-    'prettier/vue',
-    'plugin:prettier/recommended'
+  "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended",
+      "@vue/typescript/recommended"
   ],
-  rules: {
-    'comma-dangle': 'off',
-    'class-methods-use-this': 'off',
-    'import/no-unresolved': 'off',
-    'import/extensions': 'off',
-    'implicit-arrow-linebreak': 'off',
-    'import/prefer-default-export': 'off',
-    "vue/component-name-in-template-casing": ["error", "kebab-case", {
-      "ignores": []
-    }],
-    'prettier/prettier': ['error', { 'singleQuote': true, 'endOfLine': 'auto' }]
+  plugins: [
+      'vue',
+      '@typescript-eslint'
+  ],
+  "parserOptions": {
+      "parser": "babel-eslint"
   },
-};
+  "rules": {
+      '@typescript-eslint/no-unused-vars': ['off'],
+      '@typescript-eslint/no-non-null-assertion': 'off',
+      '@typescript-eslint/no-namespace': 'off',
+      '@typescript-eslint/no-this-alias': 'off',
+      '@typescript-eslint/no-explicit-any': ['off'],
+
+  }
+}
