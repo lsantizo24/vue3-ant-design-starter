@@ -1,11 +1,9 @@
 <template>
-  <div class="img">
-    <a-image
-      height="default"
-      width="default"
-      src="https://tahoejacks-vnhqjfv0atvxcid.netdna-ssl.com/wp-content/uploads/2015/08/Ridgeline-Express-Tahoe-hiking.jpg"
-    />
-  </div>
+  <a-image
+    height="default"
+    width="default"
+    src="https://tahoejacks-vnhqjfv0atvxcid.netdna-ssl.com/wp-content/uploads/2015/08/Ridgeline-Express-Tahoe-hiking.jpg"
+  />
   <div class="abs">
     <span
       >Cuotas
